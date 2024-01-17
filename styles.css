@@ -1,0 +1,98 @@
+/* General styles */
+
+:root{
+    --primary: #ED4263;
+    --secondary: #99DF4D;
+    --accent: #FFFFFF;
+    }
+    
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--primary);
+      }
+      
+      h1, h2, h3, h4 {
+        font-weight: normal;
+        color: var(--accent);
+        margin: 0;
+      }
+    
+    h2{
+    font-size: 15pt
+    }
+      
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      
+      /* Navigation */
+      nav {
+        background-color: var(--secondary);
+        padding: 20px;
+      }
+      
+      nav a {
+        display: inline-block;
+        padding: 10px;
+        margin-right: 20px;
+      }
+      
+      .dropdown {
+        position: relative;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        display: block;
+        padding: 12px 16px;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      /* Sections */
+      section {
+        padding: 40px 0;
+      }
+      
+      /* About Me section */
+      .aboutme {
+        text-align: center;
+      }
+      
+      .aboutme h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+      }
+      
+      .aboutme h3 {
+        font-size: 1.2em;
+      }
+      
+      /* Other sections */
+      .education h2, .experience h2, .skills h2, .projects h2, .contact h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      .skills ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .skills li {
+        margin-bottom: 10px;
+      }
+      
