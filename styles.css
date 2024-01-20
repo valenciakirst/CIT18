@@ -1,98 +1,271 @@
-/* General styles */
+body {
+  font-family: 'VT323', monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  color: #333;
+}
 
-:root{
-    --primary: #ED4263;
-    --secondary: #99DF4D;
-    --accent: #FFFFFF;
-    }
-    
-    body {
-        font-family: sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: var(--primary);
-      }
-      
-      h1, h2, h3, h4 {
-        font-weight: normal;
-        color: var(--accent);
-        margin: 0;
-      }
-    
-    h2{
-    font-size: 15pt
-    }
-      
-      a {
-        text-decoration: none;
-        color: #333;
-      }
-      
-      /* Navigation */
-      nav {
-        background-color: var(--secondary);
-        padding: 20px;
-      }
-      
-      nav a {
-        display: inline-block;
-        padding: 10px;
-        margin-right: 20px;
-      }
-      
-      .dropdown {
-        position: relative;
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #fff;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-      
-      .dropdown-content a {
-        display: block;
-        padding: 12px 16px;
-      }
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      
-      /* Sections */
-      section {
-        padding: 40px 0;
-      }
-      
-      /* About Me section */
-      .aboutme {
-        text-align: center;
-      }
-      
-      .aboutme h1 {
-        font-size: 3em;
-        margin-bottom: 10px;
-      }
-      
-      .aboutme h3 {
-        font-size: 1.2em;
-      }
-      
-      /* Other sections */
-      .education h2, .experience h2, .skills h2, .projects h2, .contact h2 {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      
-      .skills ul {
-        list-style-type: none;
-        padding: 0;
-      }
-      
-      .skills li {
-        margin-bottom: 10px;
-      }
-      
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0px; 
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px; 
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px; 
+  width: 16px;
+  left: 2px;
+  bottom: 2px; 
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.mode-label {
+  margin-left: 5px; 
+  color: blue;
+}
+
+
+body.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+
+section {
+  padding: 2em;
+  text-align: center;
+  margin-top: 60px; 
+  position: relative;
+}
+
+#aboutme { 
+  padding-top: 200px;
+  text-align: center; } 
+  
+  .outer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .inner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text-content {
+    text-align: left;
+    padding-right: 20px;
+  }
+  
+  .profile {
+    max-width: 20%; 
+    height: auto; 
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+
+
+#education { padding-top: 80px; } 
+#experience { padding-top: 80px; } 
+#skills { padding-top: 80px; } 
+#projects { padding-top: 80px; } 
+#contact { padding-top: 80px; } 
+
+nav {
+  background-color: #222;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; 
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1em;
+}
+
+section {
+  padding: 2em;
+  text-align: center;
+  margin-top: 60px; 
+}
+
+h1, h2 {
+  color: #222;
+  font-size: 32px;
+}
+
+h3{
+  color: #222;
+  font-size: 24px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1em;
+  font-size: 21px;
+}
+
+p{
+  font-size: 21px;
+}
+
+.contact-section p {
+  font-size: 40px;
+}
+
+img.pixel {
+  width: 50px;
+}
+
+
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em; 
+}
+
+.education ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.education li {
+  margin-bottom: 1em;
+}
+
+
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-tile {
+  margin: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.project-title {
+  margin-top: 0.5em;
+}
+
+.contact-section {
+  background-color: #222;
+  color: white;
+}
+
+.contact-section-header {
+  padding: 2em;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+
+
+.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode p, .dark-mode li {
+  color: white;
+}
+
+.dark-mode #navbar {
+  background-color: #111;
+}
+
+

@@ -1,119 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel = "stylesheet"
-        href= "styles.css"
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <nav>
-    <a href="#aboutme">About</a>
-    <div class="dropdown">
-        <button class="dropbtn">Background</button>
-        <div class="dropdown-content">
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
+  <nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li> <a href="#aboutme">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>  
+         <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="modeToggle" />
+          <span class="slider round"></span>
+        </label>
+        <span class="mode-label">Dark Mode</span>
+      </div></li>
+    </ul>
+  </nav>
+
+    <section id="aboutme" class="aboutme">
+      <div class="outer">
+        <div class="inner">
+          <div class="text-content">
+            <h1>Hey! It's K</h1>
+            <h2>Your UI Designer</h2>
+            <p>"Design enthusiast on a mission to turn pixels into smiles! <br> Unleashing creativity, one button at a time. Let's make your digital world pop!"</p>
+          </div>
         </div>
+        <img class="profile" src="herher.jpg">
+      </div>
+    </section>
+
+  <section id="education" class="education">
+    <div class="education-column">
+      <h1>Education</h1>
+      <ul>
+        <li>
+          <h3>Undergraduate</h3>
+          <p>Bachelor of Science in Information Technology - Major in Web Technology</p>
+          <p>University of the Cordilleras, Governor Pack Road, Baguio City</p>
+          <p>Expected date of graduation: August 2024</p>
+        </li>
+        <li>
+          <h3>Senior High School</h3>
+          <p>Science, Technology, Engineering, and Mathematics</p>
+          <p>Central Luzon Doctor's Hospital Educational Institution</p>
+          <p>April 2021</p>
+        </li>
+      </ul>
     </div>
-    <a href="#contact">Contact</a>
- <ul>
-</nav>
+    <div class="education-column">
+      <ul>
+        <li>
+          <h3>Junior High School</h3>
+          <p>Tarlac Christian College</p>
+          <p>Matatalaib Rd., Tarlac City</p>
+          <p>March 2019</p>
+        </li>
+        <li>
+          <h3>Primary School</h3>
+          <p>Tarlac Christian College</p>
+          <p>Matatalaib Rd., Tarlac City</p>
+          <p>March 2015</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
 
+  <section id="experience" class="experience">
+    <div>
+      <h1>Experience</h1>
+      <ul>
+        <li>
+          <h3>Seminars and Trainings Attended</h3>
+          <p>4th Trailblaze Leaders's Congress - February 23 - 25, 2019, Tarlac State University Hostel, Lucinda Campus, Tarlac City</p>
+        </li>
+        <li>
+          <h3>Leadership and Membership</h3>
+          <p>Secretary, Supreme Student Christian Council - June 2018 - March 2019, Tarlac Christian College, Tarlac City</p>
+        </li>
+      </ul>
+    </div>
+  </section>
 
+  <section id="skills" class="skills">
+    <div>
+      <h1>Skills</h1>
+      <ul>
+        <li>Proficient in programming/scripting languages: Java, JavaScript, SQL, and Python</li>
+        <li>Knowledgeable in markup language: HTML and web user interface design (UI)</li>
+        <li>Proficient with multimedia software: Picsart and Canva</li>
+        <li>Proficient in speaking and writing skills</li>
+        <li>Detail-oriented</li>
+        <li>Flexible team player that can adapt easily to a fast-paced environment</li>
+      </ul>
+    </div>
+  </section>
 
-<section id="aboutme" class="aboutme" >
-  <h1>hey! it's  K</h1>
-  <h1>your UI designer</h1>
-  <h3>"Design enthusiast on a mission to turn pixels into smiles!
-    <br> Unleashing creativity, one button at a time. 
-    <br> Let's make your digital world pop!"</h3>
-</section>
+  <section id="projects" class="projects-section">
+    <h2 class="projects-section-header">My Projects</h2>
 
+    <div class="projects-grid">
+      <a href="https://valenciakirst.github.io/survey.github.io/" target="_blank" class="project project-tile">
+        <img class="project-image" src="form.png" alt="survey"/>
+        <p class="project-title"><span class="code">&lt;</span> Survey Form <span class="code">&#47;&gt;</span></p>
+      </a>
+      <a href="https://valenciakirst.github.io/tribute.github.io/" target="_blank" class="project project-tile">
+        <img class="project-image" src="Maria.png" alt="tribute"/>
+        <p class="project-title"><span class="code">&lt;</span> Tribute Page <span class="code">&#47;&gt;</span></p>
+      </a>
+      <a href="https://valenciakirst.github.io/technicaldoc.github.io/" target="_blank" class="project project-tile">
+        <img class="project-image" src="Barbie.png" alt="project"/>
+        <p class="project-title"><span class="code">&lt;</span> Technical Documentation Page <span class="code">&#47;&gt;</span></p>
+      </a>
+      <a href="https://valenciakirst.github.io/product.github.io/" target="_blank" class="project project-tile">
+        <img class="project-image" src="store.png" alt="project"/>
+        <p class="project-title"><span class="code">&lt;</span> Product Landing Page <span class="code">&#47;&gt;</span></p>
+      </a>
+    </div>
 
-<section id = "education" class="education">
-  <h1>Education</h1>
+  </section>
 
-    <h2>Undergraduate</h2>
-      	<h3>:Bachelor of Science in Information Technology - Major in Web Technology</h3>
-      	<h3>:University of the Cordilleras</h3>
-        <h3>:Governor Pack Road, Baguio City</h3>
-      	<h3>:Expected date of graduation: August 2024</h3>
-    <h2>Senior High School</h2>
-      	<h3>:Science, Technology, Engineering, and Mathematics </h3>
-        <h3>:Central Luzon Doctor's Hospital Educational Institution</h3>
-        <h3>:Romulo Highway, San Pablo, Tarlac City</h3>
-        <h3>:April 2021</h3>
-    <h2>Junior High School</h2>
-        <h3>:Tarlac Christian College</h3>
-        <h3>:Matatalaib Rd., Tarlac City</h3>
-        <h3>:March 2019</h3>
-    <h2>Primary School</h2>
-        <h3>:Tarlac Christian College</h3>
-        <h3>:Matatalaib Rd., Tarlac City</h3>
-        <h3>:March 2015</h3>
+  <section id="contact" class="contact-section">
+    <div class="contact-section-header">
+      <h2>Work in Progress</h2>
+      <p>let's work on it</p>
+      <p>make it chic!</p>
+    </div>
+    <div class="contact-links">
+      <a href="https://web.facebook.com/kirsten.valencia.5/" target="_blank" class="btn contact-details"><i class="fab fa-facebook-square"></i> Facebook</a>
+      <a id="profile-link" href="https://github.com/valenciakirst" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+      <a href="mailto:candykaye87@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Mail me <3 </a>
+      <a href="tel:09999999999" class="btn contact-details"><i class="fas fa-mobile-alt"></i> ###</a>
+    </div>
+  </section>
 
-</section>
-
-
-
-<section id = "experience" class="experience">
-  <h1>Experience</h1>
-
-<h2>Seminars and Trainings Attended</h2>
-<h4>
-<br>4th Trailblaze Leaders’ Congress
-<br>February 23 – 25, 2019
-<br>Tarlac State University Hostel, Lucinda Campus, Tarlac City
-</h4>
-
-<h2>Leadership and Membership</h2>
-<h4>
-<br>Secretary, Supreme Student Christian Council
-<br>June 2018 – March 2019
-<br>Tarlac Christian College, Tarlac City
-</h4>
-
-</section>
-
-
-
-<section id = "skills" class="skills">
-  <h1>Skills</h1>
-<ul>
-	<li>Proficient in programming/scripting language: Java, JavaScript, SQL, and Python</li>
-	<li>Knowledgeable in markup language: HTML and web user interface design (UI)</li>
-	<li>Proficient with multimedia software: Picsart and Canva</li>
-	<li>Proficient in speaking skills and writing skills</li>
-	<li>Detail-oriented</li>
-	<li>Flexible team player that can adapt easily to a fast-paced environment</li>
-
-</ul>
-</section>
-
-
-
-<section id = "projects" class="projects">
-  <h1>Projects</h1>
-</section>
-
-
-
-<section id = "contact" class="contact">
-  <h1>Let's talk</h1>
-<ul>
-<li>Gmail</li>
-<li>Facebook</li>
-<li>Messenger</li>
-<li>Twitter</li>
-<li>Instagram</li>
-<li>Contact Number</li>
-</ul>
-</section>
+  <footer>
+    <p>All rights reserved to GandaGandahan Org</p>
+    <p>&copy; 2023</p>
+  </footer>
+  
+  <script defer src="script.js"></script>
 
 </body>
+
 </html>
