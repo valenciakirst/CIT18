@@ -111,9 +111,13 @@ section {
 
 #education { padding-top: 80px; } 
 #experience { padding-top: 80px; } 
-#skills { padding-top: 80px; } 
-#projects { padding-top: 80px; } 
-#contact { padding-top: 80px; } 
+#skills { padding-top: 200px; } 
+
+#projects { 
+  padding-top: 120px;
+  padding-bottom: 250px; 
+
+} 
 
 nav {
   background-color: #222;
@@ -143,6 +147,11 @@ section {
   padding: 2em;
   text-align: center;
   margin-top: 60px; 
+}
+
+.contact-section-header h2{
+  color: white;
+  font-size: 40px;
 }
 
 h1, h2 {
@@ -196,11 +205,11 @@ img.pixel {
 }
 
 
-
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .project-tile {
@@ -223,6 +232,8 @@ img.pixel {
 .contact-section {
   background-color: #222;
   color: white;
+  padding-top: 120px;
+  padding-bottom: 120px; 
 }
 
 .contact-section-header {
@@ -234,6 +245,7 @@ img.pixel {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  font-size: 24px;
 }
 
 .btn {
@@ -244,6 +256,10 @@ img.pixel {
   text-decoration: none;
   border-radius: 5px;
   text-align: center;
+}
+
+.dark-mode .btn{
+  background-color: #2196F3;
 }
 
 footer {
@@ -268,4 +284,11 @@ footer {
   background-color: #111;
 }
 
+.dark-mode #contact{
+  background-color: #333;
+}
+
+.dark-mode footer{
+  background-color: #111;
+}
 
